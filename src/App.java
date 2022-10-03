@@ -9,7 +9,8 @@ public class App {
         System.out.println("Digite de 1 até 12 para saber o mês:");
         mes = teclado.nextInt();
 
-        do {
+        while (true) {
+            
             switch (mes) {
                 case 1:
                     System.out.println("Jan");
@@ -53,7 +54,9 @@ public class App {
             }
             System.out.println("Digite de 1 até 12 para saber o mês:");
             mes = teclado.nextInt();
-        } while (mes != 0);
+            if (mes == 0) break;
+        }
+        
         System.out.println("Saindo...");
 
     }
