@@ -2,59 +2,59 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in).useLocale(Locale.US);
 
+        int mes;
         System.out.println("Digite de 1 até 12 para saber o mês:");
-        int mes = teclado.nextInt();
-        
+        mes = teclado.nextInt();
+
+        do {
             switch (mes) {
                 case 1:
-                System.out.println("Jan");
-                break;
+                    System.out.println("Jan");
+                    break;
                 case 2:
-                System.out.println("Fev");
-                break;
+                    System.out.println("Fev");
+                    break;
                 case 3:
-                System.out.println("Mar");
-                break;
+                    System.out.println("Mar");
+                    break;
                 case 4:
-                System.out.println("Abr");
-                break;
+                    System.out.println("Abr");
+                    break;
                 case 5:
-                System.out.println("Mai");
-                break;
+                    System.out.println("Mai");
+                    break;
                 case 6:
-                System.out.println("Jun");
-                break;
+                    System.out.println("Jun");
+                    break;
                 case 7:
-                System.out.println("Jul");
-                break;
+                    System.out.println("Jul");
+                    break;
                 case 8:
-                System.out.println("Ago");
-                break;
+                    System.out.println("Ago");
+                    break;
                 case 9:
-                System.out.println("Set");
-                break;
+                    System.out.println("Set");
+                    break;
                 case 10:
-                System.out.println("Out");
-                break;
+                    System.out.println("Out");
+                    break;
                 case 11:
-                System.out.println("Nov");
-                break;
+                    System.out.println("Nov");
+                    break;
                 case 12:
-                System.out.println("Dez");
-                break;
+                    System.out.println("Dez");
+                    break;
                 default:
-                System.out.println("Digite novamente um número valido entre 1 - 12");
-                
-                break;
-
+                    System.out.println("Escolha um número válido, ou 0 para encerrar");
+                    break;
             }
-        
+            System.out.println("Digite de 1 até 12 para saber o mês:");
+            mes = teclado.nextInt();
+        } while (mes != 0);
+        System.out.println("Saindo...");
 
-
-
-       
     }
 }
